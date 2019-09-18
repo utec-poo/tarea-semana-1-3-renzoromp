@@ -2,16 +2,14 @@
 #include "Tipos.h"
 using namespace std;
 
-int main() {
+double AreaTriangulo(int b, int h){
+  return(b*h/2);
+}
 
-entero base=0, entero altura=0;
-cout << "\ningrese la base:";
-cin >> base;
-cout << "\ningrese la altura:";
-cin >> altura;
-
-
-// ToDO
-
-  return 0;
+int main() { double base; double altura;
+  cout << " - Ingrese la base: ";
+  cin >> base;
+  cout << " - Ingrese la altura: ";
+  cin >> altura;
+  cout << " - El área del triángulo es: " << AreaTriangulo(base, altura);
 }
